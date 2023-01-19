@@ -12,23 +12,28 @@
     <title>Playhard | Iniciar Sesión</title>
 </head>
 <body class="login">
-    <form action="#" method="post" class="form">
-        <h1 class="form__title">Bienvenido</h1>
+    <div class="container">
+        <form action="#" method="post" class="form" id="form">
+            <h1 class="form__title">Bienvenido</h1>
+    
+            <div class="field">
+                <input type="text" class="field__input" name="username" id="username" placeholder="Nombre de usuario">
+            </div>
+    
+            <div class="field">
+                <input type="password" class="field__input" name="password" id="password" placeholder="Contraseña">
+            </div>
+    
+            <input type="submit" value="Login" class="btn">
+    
+            <div class="form__links">
+                <a href="#" id="resetPassword">¿Perdiste tu contraseña?</a>
+                <a href="#" id="createAccount">¿No tienes cuenta? Registrate</a>
+            </div>
+        </form>
+    </div>
+    
 
-        <div class="field">
-            <input type="text" class="field__input" name="username" id="username" placeholder="Nombre de usuario">
-        </div>
-
-        <div class="field">
-            <input type="password" class="field__input" name="password" id="password" placeholder="Contraseña">
-        </div>
-
-        <input type="submit" value="Login" class="btn">
-
-        <div class="form__links">
-            <a href="#">¿Perdiste tu contraseña?</a>
-            <a href="#">¿No tienes cuenta? Registrate</a>
-        </div>
-    </form>
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
